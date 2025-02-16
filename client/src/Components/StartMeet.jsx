@@ -46,7 +46,7 @@ function StartMeet() {
           const cleanName = adminName.toLowerCase().replace(/\s+/g, "");
           setSmallLink(`/meeting?adminName=${cleanName}&meetingId=${meetId}`);
           setIsLink(
-            `https://live-face.vercel.app/meeting?adminName=${cleanName}&meetingId=${meetId}`
+            `https://face-time-call.vercel.app/meeting?adminName=${cleanName}&meetingId=${meetId}`
           );
           setIsLoading(false);
         }
