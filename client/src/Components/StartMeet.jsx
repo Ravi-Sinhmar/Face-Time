@@ -31,7 +31,7 @@ function StartMeet() {
     const meetId = RandomString(6);
     console.log("fetch request sent", adminName, meetId);
     const content = { adminName: adminName, meetingId: meetId };
-    fetch(`https://facesyncbackend.onrender.com/saveMeet`, {
+    fetch(`https://face-time-call.onrender.com/saveMeet`, {
       method: "POST",
       credentials: "include",
       headers: {

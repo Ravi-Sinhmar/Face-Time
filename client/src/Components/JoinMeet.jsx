@@ -69,7 +69,7 @@ const removeUserData = () => {
     };
     if (adminCon && meetingId) {
       const content = { adminName:adminCon, meetingId:meetingId };
-      fetch(`https://facesyncbackend.onrender.com/seeMeet`, {
+      fetch(`https://face-time-call.onrender.com/seeMeet`, {
         method: "POST",
         credentials: "include",
         headers: {
