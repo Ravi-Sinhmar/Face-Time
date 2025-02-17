@@ -167,7 +167,7 @@ if(data.token){
       console.log(`Incoming Call`, from, offer);
       const ans = await createAnswer(offer);
        socket.emit("call:accepted", { to: from, ans }); // 2nd message , 5th Message , 9th ->testing
-       await sendVideo(myVideo);
+        sendVideo(myVideo);
     },
     [socket,createAnswer,sendVideo,myVideo]
   );
