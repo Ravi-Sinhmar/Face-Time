@@ -53,12 +53,6 @@ app.post("/saveMeet", async (req, res) => {
       .json({ status: "fail", message: "No username or meetingId" });
   }
 });
-// http://localhost:3000/meeting/?adminName=ravisinhmar&meetingId=503385
-// http://localhost:3000/meeting/?adminName=ravisinhmar&meetingId=503385
-// http://localhost:3000/meeting/?adminName=chromeboy&meetingId=586379
-// Api 2
-
-
 
 
 
@@ -74,6 +68,10 @@ console.log(req.body);
   res.status(500).json({status:'fail',message:error});
 }
 
+});
+
+app.get('/test',(req,res)=>{
+  res.send("Server is live");
 });
 
 
